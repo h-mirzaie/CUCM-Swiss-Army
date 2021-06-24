@@ -1,9 +1,15 @@
 from ciscoaxl import axl
+import yaml
 
-cucm = '10.8.85.190'
-username = 'axl'
-password = '1234'
-version = '11.5'
+
+
+with open('info.yml', 'r') as stream:
+    yamlInfo = yaml.safe_load(stream)
+yamlConfig = yamlInfo['config']
+cucm = yamlConfig['cucm']
+username = yamlConfig['username']
+password = yamlConfig['password']
+version = yamlConfig['version']
 ucm = axl(username,password,cucm,version)
 
 filter = {'tagfilter' :{'userid':'','uuid':'', 'telephoneNumber':''}}

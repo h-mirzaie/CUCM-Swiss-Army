@@ -337,3 +337,6 @@ ASALocalRun/
 
 #Jupyter Notebook
 *.ipynb
+
+#CUCM Info
+info.yml
