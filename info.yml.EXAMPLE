@@ -2,4 +2,4 @@ config:
   cucm: 'X.X.X.X'
   username: 'YOUR_AXL_USER'
   password: 'YOUR_AXL_PASSWORD'
-  version: 'YOUR_VERSION' 
+  version: 'CUCM_VERSION' 
